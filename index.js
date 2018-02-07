@@ -1,5 +1,12 @@
 require('dotenv').config();
+var moment = require('moment');
 var twilio = require('twilio');
+
+if (moment().weekday() != 3)
+{
+    console.log('It is not Wednesday, my dudes.')
+    process.exit();
+}
 
 var accountSid = process.env.TWILIO_SID;
 var authToken = process.env.TWILIO_AUTH_TOKEN;
