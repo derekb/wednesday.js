@@ -1,6 +1,6 @@
 {
   "name": "wednesday",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Let your dudes know what day it is.",
   "main": "index.js",
   "scripts": {
