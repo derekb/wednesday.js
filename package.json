@@ -1,0 +1,11 @@
+{
+  "name": "wednesday",
+  "version": "1.0.0",
+  "description": "Let your dudes know what day it is.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Derek Burkgren",
+  "license": "ISC"
+}
