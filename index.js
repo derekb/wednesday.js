@@ -1,6 +1,7 @@
 require('dotenv').config();
 var moment = require('moment');
 var twilio = require('twilio');
+var _ = require('lodash');
 
 if (moment().weekday() != 3)
 {
@@ -10,13 +11,14 @@ if (moment().weekday() != 3)
 
 var accountSid = process.env.TWILIO_SID;
 var authToken = process.env.TWILIO_AUTH_TOKEN;
-
-var your_dude = process.argv[3];
-var you = process.argv[4];
-
 var client = new twilio(accountSid, authToken);
 
-letYourDudeKnow(you, your_dude);
+var you = process.argv[2]
+var your_dudes = _.drop(process.argv, 3);
+
+_.forEach(your_dudes, function(dude) {
+    letYourDudeKnow(you, dude);
+});
 
 console.log('It is wednesday, my dudes.');
 
