@@ -20,7 +20,7 @@ _.forEach(your_dudes, function(dude) {
     letYourDudeKnow(you, dude);
 });
 
-console.log('It is wednesday, my dudes.');
+console.log('It is Wednesday, my dudes.');
 
 function letYourDudeKnow(you, your_dude) {
     client.messages.create({
