@@ -24,8 +24,8 @@ console.log('It is Wednesday, my dudes.');
 
 function letYourDudeKnow(you, your_dude) {
     client.messages.create({
-        to: you,
-        from: your_dude,
+        to: your_dude,
+        from: you,
         mediaUrl: 'http://i0.kym-cdn.com/entries/icons/original/000/020/016/wednesday.jpg'    
     });
 }
